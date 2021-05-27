@@ -1,0 +1,22 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #333333;
+    --color-blue: #2D9CDB;
+    --color-darkblue: #100E1D;
+    --color-red: #EB5757;
+    --color-grey: #828282;
+}
+
+$breakpoints: (
+    phonesmall: 20em,
+    // 414px,
+    phone: 25.875em,
+    // 768px,
+    tablet: 48em,
+    // 1024px,
+    tablet-landscape: 64em,
+    // 1366px
+    desktop: 85.375em,
+    // 1536px
+    desktophd: 96em
+);

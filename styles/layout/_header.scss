@@ -1,0 +1,52 @@
+.header {
+  margin: 2rem auto 0 auto;
+  width: 90vw;
+  max-width: 160rem;
+  .header__logo {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    font-size: 3.6rem;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__desktop {
+  display: none;
+  ul {
+    width: 1000px;
+    li {
+      text-align: right;
+    }
+  }
+  @include media(">=tablet-landscape") {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    // margin: 3rem 4rem;
+    width: 60vw;
+  }
+}
+.header__mobile {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+  height: 80vw;
+  top: 50px;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  li {
+    text-align: center;
+  }
+}
+.burger {
+  width: 1.8rem;
+  @include media(">=tablet-landscape") {
+    display: none;
+  }
+}

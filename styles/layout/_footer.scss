@@ -1,0 +1,107 @@
+.footer {
+  background-color: var(--color-darkblue);
+  width: 100%;
+  h1 {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    font-size: 3.6rem;
+    color: white;
+  }
+}
+.footer__container {
+  width: 85vw;
+  @include flex_column;
+  margin: auto;
+  @include media(">=tablet-landscape") {
+    width: 85vw;
+    max-width: 144rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: start;
+  }
+}
+.list {
+  margin: 3rem 0;
+  padding-left: 0;
+  width: 100%;
+  li {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    text-align: left;
+    margin: 0;
+  }
+}
+.socials {
+  width: 100%;
+  height: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 6.5rem 0;
+  @include media(">=tablet-landscape") {
+    margin: 3rem 0;
+  }
+}
+.socials__icons {
+  width: 9.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.join {
+  width: 35rem;
+  .join__text {
+    margin-bottom: 0.6rem;
+    h6 {
+      color: var(--color-grey);
+      @include media(">=tablet-landscape") {
+        color: white;
+      }
+    }
+  }
+  @include media(">=tablet-landscape") {
+    margin: 3rem 0;
+  }
+}
+.join__contact {
+  width: 100%;
+  height: 4.7rem;
+  border-radius: 1.2rem;
+  position: relative;
+  .join__input {
+    border: none;
+    color: #bdbdbd;
+    background-color: #f2f2f2;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    padding-left: 2rem;
+  }
+  .join__button {
+    border: none;
+    background-color: var(--color-blue);
+    color: white;
+    height: 80%;
+    width: 25%;
+    position: absolute;
+    right: 0.4rem;
+    top: 10%;
+    border-radius: inherit;
+  }
+}
+.signature {
+  margin: 15.4rem auto 0 auto;
+  padding-bottom: 2.4rem;
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+  }
+  @include media(">=tablet-landscape") {
+    margin-top: 15.4rem;
+    padding-bottom: 2rem;
+  }
+}
