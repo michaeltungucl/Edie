@@ -301,7 +301,7 @@ button {
 }
 
 .signature {
-  margin: 15.4rem auto 0 auto;
+  margin: 18rem auto 0 auto;
   padding-bottom: 2.4rem;
 }
 
@@ -363,6 +363,7 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 60vw;
+    max-width: 100rem;
   }
 }
 
@@ -432,8 +433,11 @@ button {
 @media (min-width: 64em) {
   .title {
     width: 70vw;
-    margin: 1rem auto;
+    margin: 10rem auto 4rem auto;
     padding-left: 12rem;
+  }
+  .title .title__h1 {
+    margin-top: 1.6rem;
   }
 }
 
