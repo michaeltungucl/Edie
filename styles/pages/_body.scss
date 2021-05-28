@@ -195,38 +195,7 @@
     }
   }
 }
-// .grid4__1 {
-//   @include flex_column;
-//   margin-bottom: 4rem;
-//   @include media(">=tablet-landscape") {
-//     grid-row: 4 / 24;
-//     grid-column: 1 / 11;
-//   }
-// }
-// .grid4__2 {
-//   @include flex_column;
-//   margin-bottom: 4rem;
-//   @include media(">=tablet-landscape") {
-//     grid-row: 1 / 21;
-//     grid-column: 11 / 21;
-//   }
-// }
-// .grid4__3 {
-//   @include flex_column;
-//   margin-bottom: 4rem;
-//   @include media(">=tablet-landscape") {
-//     grid-row: 20 / 40;
-//     grid-column: 1 / 11;
-//   }
-// }
-// .grid4__4 {
-//   @include flex_column;
-//   margin-bottom: 4rem;
-//   @include media(">=tablet-landscape") {
-//     grid-row: 17 / 37;
-//     grid-column: 11 / 21;
-//   }
-// }
+
 .designs__1 {
   @include flex_column;
   margin-bottom: 4rem;

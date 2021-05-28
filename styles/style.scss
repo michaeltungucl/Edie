@@ -1,9 +1,9 @@
 @charset "UTF-8";
+@import "./core/reset";
 @import "./utils/variables";
 @import "../node_modules/include-media/dist/include-media";
-
-@import "./core/base";
 @import "./utils/mixins";
+@import "./core/base";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./pages/body";

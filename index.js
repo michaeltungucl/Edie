@@ -1,13 +1,9 @@
 const accordion = () => {
   const burger = document.querySelector(".burger");
-  const list = document.querySelector(".header__mobile");
+  const list = document.querySelector(".navigation");
 
-  burger.addEventListener("click", () => {
-    if (list.style.display === "flex") {
-      list.style.display = "none";
-    } else {
-      list.style.display = "flex";
-    }
+  burger.addEventListener("click", (e) => {
+    list.classList.toggle("active");
   });
 };
 
