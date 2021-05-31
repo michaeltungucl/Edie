@@ -1,21 +1,11 @@
 @mixin flex_column {
   display: flex;
   flex-direction: column;
-  //   justify-content: space-between;
 }
 @mixin grid4_mobile {
-  //   display: grid;
-  //   grid-template-columns: 1fr;
   margin: auto;
   width: 95vw;
 }
-// @mixin grid4_desktop {
-//   display: grid;
-//   grid-template-columns: repeat(20, 1fr);
-//   grid-template-rows: repeat(30, 5rem);
-//   grid-column-gap: 3rem;
-//   width: 100%;
-// }
 @mixin grid4_desktop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -23,7 +13,6 @@
   grid-column-gap: 3rem;
   width: 100%;
 }
-
 
 @mixin headline1 {
   font-size: 2.4rem;
