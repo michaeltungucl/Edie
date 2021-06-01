@@ -1,4 +1,7 @@
 .cards {
+  width: 95%;
+}
+.cards__container {
   margin: 4rem auto;
   display: flex;
   flex-direction: column;
@@ -9,6 +12,14 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+  }
+}
+.cards__title {
+  margin: 0 auto 2rem auto;
+  width: 80vw;
+  @include media(">=tablet-landscape") {
+    margin: 0 0 4rem 0;
+    max-width: 350px;
   }
 }
 .card {

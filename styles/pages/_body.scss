@@ -5,11 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h3 {
-    color: var(--color-blue);
-  }
 }
-.title {
+.question {
+  color: var(--color-blue);
+}
+.introduction {
   width: 80vw;
   margin: 7rem auto;
   max-width: 144rem;
@@ -17,21 +17,10 @@
     width: 70vw;
     margin: 10rem auto 4rem auto;
     padding-left: 12rem;
-    .title__h1 {
+    .title__header {
       margin-top: 1.6rem;
     }
   }
-}
-.header_middle {
-  margin: 0 auto 2rem auto;
-  width: 80vw;
-  @include media(">=tablet-landscape") {
-    margin: 0 auto 4rem auto;
-  }
-}
-.header_middle_2 {
-  margin: 8rem auto 6rem auto;
-  width: 80vw;
 }
 .testimonial {
   width: 95vw;

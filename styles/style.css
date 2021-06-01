@@ -136,11 +136,11 @@ table {
 :root {
   --color-white: #ffffff;
   --color-black: #333333;
-  --color-blue: #2D9CDB;
-  --color-darkblue: #100E1D;
-  --color-red: #EB5757;
+  --color-blue: #2d9cdb;
+  --color-darkblue: #100e1d;
+  --color-red: #eb5757;
   --color-grey: #828282;
-  --font-family-primary:  "Poppins", sans-serif;
+  --font-family-primary: "Poppins", sans-serif;
   --font-family-logo: "Heebo", sans-serif;
 }
 
@@ -300,7 +300,7 @@ button {
   width: 100%;
 }
 
-.footer h1 {
+.logo {
   font-family: "Heebo", sans-serif;
   font-weight: 800;
   font-size: 3.6rem;
@@ -619,6 +619,11 @@ button {
   }
 }
 
+.designs__title {
+  margin: 8rem 0 6rem 0;
+  max-width: 40rem;
+}
+
 .designs__p {
   color: #828282;
   margin-top: 1rem;
@@ -744,21 +749,21 @@ button {
   }
 }
 
-.contact .contact__h1 {
+.contact__title {
   margin-bottom: 2.5rem;
 }
 
-.contact .contact__p {
+.contact__description {
   margin: 4rem 0 6rem 0;
 }
 
 @media (min-width: 64em) {
-  .contact .contact__p {
+  .contact__description {
     width: 24%;
   }
 }
 
-.contact .contact__h6 {
+.contact__question {
   margin-bottom: 0.6rem;
 }
 
@@ -792,6 +797,10 @@ button {
 }
 
 .cards {
+  width: 95%;
+}
+
+.cards__container {
   margin: 4rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,7 +819,7 @@ button {
 }
 
 @media (min-width: 64em) {
-  .cards {
+  .cards__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -819,6 +828,18 @@ button {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+  }
+}
+
+.cards__title {
+  margin: 0 auto 2rem auto;
+  width: 80vw;
+}
+
+@media (min-width: 64em) {
+  .cards__title {
+    margin: 0 0 4rem 0;
+    max-width: 350px;
   }
 }
 
@@ -937,15 +958,19 @@ button {
           flex-direction: column;
 }
 
-.team__texts h5 {
+.team__texts .team__texts__p {
+  margin: 1rem 0 4rem 0;
+}
+
+.team__title__small {
   color: #eb5757;
 }
 
-.team__texts .team__texts__h2 {
+.team__title__large {
   margin-top: 1rem;
 }
 
-.team__texts .team__texts__p {
+.team__description {
   margin: 1rem 0 4rem 0;
 }
 
@@ -1030,41 +1055,25 @@ button {
           align-items: center;
 }
 
-.main h3 {
+.question {
   color: var(--color-blue);
 }
 
-.title {
+.introduction {
   width: 80vw;
   margin: 7rem auto;
   max-width: 144rem;
 }
 
 @media (min-width: 64em) {
-  .title {
+  .introduction {
     width: 70vw;
     margin: 10rem auto 4rem auto;
     padding-left: 12rem;
   }
-  .title .title__h1 {
+  .introduction .title__header {
     margin-top: 1.6rem;
   }
-}
-
-.header_middle {
-  margin: 0 auto 2rem auto;
-  width: 80vw;
-}
-
-@media (min-width: 64em) {
-  .header_middle {
-    margin: 0 auto 4rem auto;
-  }
-}
-
-.header_middle_2 {
-  margin: 8rem auto 6rem auto;
-  width: 80vw;
 }
 
 .testimonial {
