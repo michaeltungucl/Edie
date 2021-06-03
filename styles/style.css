@@ -372,10 +372,8 @@ button {
 }
 
 .header {
-  height: 100%;
   position: fixed;
   width: 100%;
-  height: 100vh;
   padding: 2rem;
   z-index: 999;
 }
@@ -466,6 +464,9 @@ button {
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
   opacity: 1;
+  height: 100vh;
+  height: 100%;
+  background-color: white;
 }
 
 .navigation__element {
@@ -844,7 +845,7 @@ button {
           box-shadow: 0 1rem 3rem rgba(51, 51, 51, 0.1);
 }
 
-.card:hover button {
+.card:hover .button {
   color: white;
   background-color: var(--color-blue);
 }
@@ -890,7 +891,7 @@ button {
   color: #4f4f4f;
 }
 
-.card button {
+.card .button {
   cursor: pointer;
   width: 11.6rem;
   height: 4.2rem;
@@ -898,6 +899,18 @@ button {
   border-radius: 1.2rem;
   background-color: #e0e0e0;
   color: #828282;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
 }
 
 .team {
