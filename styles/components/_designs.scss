@@ -6,6 +6,7 @@
   position: relative;
   img {
     border-radius: 1.2rem;
+    width: 100%;
   }
   @include media(">=tablet-landscape") {
     @include grid4_desktop;

@@ -525,6 +525,7 @@ button {
 
 .designs__grid img {
   border-radius: 1.2rem;
+  width: 100%;
 }
 
 @media (min-width: 64em) {
