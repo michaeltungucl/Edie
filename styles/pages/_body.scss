@@ -7,6 +7,7 @@
   align-items: center;
 }
 .question {
+  @include headline3;
   color: var(--color-blue);
 }
 .introduction {
@@ -15,11 +16,16 @@
   max-width: 144rem;
   @include media(">=tablet-landscape") {
     width: 70vw;
-    margin: 10rem auto 4rem auto;
+    margin: 20rem auto 6rem auto;
     padding-left: 12rem;
-    .title__header {
-      margin-top: 1.6rem;
-    }
+  }
+}
+.title__header {
+  @include headline1;
+  margin-top: 1.6rem;
+  max-width: 28rem;
+  @include media(">=tablet-landscape") {
+    max-width: 55rem;
   }
 }
 .testimonial {
@@ -33,6 +39,7 @@
   }
 }
 .testimonial__text {
+  @include headline2;
   margin-bottom: 3rem;
   @include media(">=tablet-landscape") {
     width: 80%;
@@ -48,7 +55,7 @@
   width: 8.2rem;
   border-radius: 1.2rem;
 }
-.testimonial__profile__credentials {
+.testimonial__credentials {
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
@@ -56,4 +63,10 @@
   h3 {
     color: var(--color-grey);
   }
+}
+.testimonial__name {
+  @include headline2;
+}
+.testimonial__position {
+  @include headline3;
 }

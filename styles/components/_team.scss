@@ -16,10 +16,12 @@
     margin: 1rem 0 4rem 0;
   }
 }
-.team__title__small {
+.team__title-small {
+  @include headline5;
   color: #eb5757;
 }
-.team__title__large {
+.team__title-large {
+  @include headline2;
   margin-top: 1rem;
 }
 .team__description {

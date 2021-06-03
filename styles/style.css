@@ -193,82 +193,6 @@ body {
   font-size: 1.6rem;
 }
 
-h1 {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 3.6rem;
-}
-
-@media (min-width: 64em) {
-  h1 {
-    font-size: 4.8rem;
-    font-weight: 500;
-    line-height: 1.5;
-  }
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 500;
-  line-height: 3.6rem;
-}
-
-@media (min-width: 64em) {
-  h2 {
-    font-size: 3.6rem;
-    font-weight: 500;
-    line-height: 5.4rem;
-  }
-}
-
-h3 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.7rem;
-}
-
-@media (min-width: 64em) {
-  h3 {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 3.6rem;
-  }
-}
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  h4 {
-    font-size: 2.1rem;
-    font-weight: 500;
-    line-height: 2.1rem;
-  }
-}
-
-h5 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.7rem;
-}
-
-h6 {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  h6 {
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 2.1rem;
-  }
-}
-
 p {
   font-size: 1.2rem;
   font-weight: 400;
@@ -384,23 +308,20 @@ button {
   width: 35rem;
 }
 
-.join .join__text {
-  margin-bottom: 0.6rem;
+@media (min-width: 64em) {
+  .join {
+    margin: 3rem 0;
+  }
 }
 
-.join .join__text h6 {
+.join__text {
+  margin-bottom: 0.6rem;
   color: var(--color-grey);
 }
 
 @media (min-width: 64em) {
-  .join .join__text h6 {
+  .join__text {
     color: white;
-  }
-}
-
-@media (min-width: 64em) {
-  .join {
-    margin: 3rem 0;
   }
 }
 
@@ -436,9 +357,6 @@ button {
 .signature {
   margin: 18rem auto 0 auto;
   padding-bottom: 2.4rem;
-}
-
-.signature h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
@@ -596,9 +514,12 @@ button {
   height: auto;
 }
 
-.designs__grid {
+.designs {
   margin: auto;
-  width: 95vw;
+}
+
+.designs__grid {
+  width: 100%;
   position: relative;
 }
 
@@ -620,8 +541,19 @@ button {
 }
 
 .designs__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
   margin: 8rem 0 6rem 0;
   max-width: 40rem;
+}
+
+@media (min-width: 64em) {
+  .designs__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
 }
 
 .designs__p {
@@ -750,7 +682,18 @@ button {
 }
 
 .contact__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
   margin-bottom: 2.5rem;
+}
+
+@media (min-width: 64em) {
+  .contact__title {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
 }
 
 .contact__description {
@@ -764,7 +707,18 @@ button {
 }
 
 .contact__question {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
   margin-bottom: 0.6rem;
+}
+
+@media (min-width: 64em) {
+  .contact__question {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.1rem;
+  }
 }
 
 .contact__button {
@@ -832,8 +786,19 @@ button {
 }
 
 .cards__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
   margin: 0 auto 2rem auto;
   width: 80vw;
+}
+
+@media (min-width: 64em) {
+  .cards__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -881,6 +846,20 @@ button {
 .card:hover button {
   color: white;
   background-color: var(--color-blue);
+}
+
+.card .card__title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+@media (min-width: 64em) {
+  .card .card__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
 }
 
 .card .card__img1 {
@@ -962,12 +941,26 @@ button {
   margin: 1rem 0 4rem 0;
 }
 
-.team__title__small {
+.team__title-small {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
   color: #eb5757;
 }
 
-.team__title__large {
+.team__title-large {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
   margin-top: 1rem;
+}
+
+@media (min-width: 64em) {
+  .team__title-large {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
 }
 
 .team__description {
@@ -1056,7 +1049,18 @@ button {
 }
 
 .question {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
   color: var(--color-blue);
+}
+
+@media (min-width: 64em) {
+  .question {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+  }
 }
 
 .introduction {
@@ -1068,11 +1072,30 @@ button {
 @media (min-width: 64em) {
   .introduction {
     width: 70vw;
-    margin: 10rem auto 4rem auto;
+    margin: 20rem auto 6rem auto;
     padding-left: 12rem;
   }
-  .introduction .title__header {
-    margin-top: 1.6rem;
+}
+
+.title__header {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  margin-top: 1.6rem;
+  max-width: 28rem;
+}
+
+@media (min-width: 64em) {
+  .title__header {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 64em) {
+  .title__header {
+    max-width: 55rem;
   }
 }
 
@@ -1091,7 +1114,18 @@ button {
 }
 
 .testimonial__text {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
   margin-bottom: 3rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__text {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -1117,7 +1151,7 @@ button {
   border-radius: 1.2rem;
 }
 
-.testimonial__profile__credentials {
+.testimonial__credentials {
   margin-left: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1131,7 +1165,35 @@ button {
           justify-content: space-evenly;
 }
 
-.testimonial__profile__credentials h3 {
+.testimonial__credentials h3 {
   color: var(--color-grey);
+}
+
+.testimonial__name {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__name {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+  }
+}
+
+.testimonial__position {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+}
+
+@media (min-width: 64em) {
+  .testimonial__position {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

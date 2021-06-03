@@ -51,17 +51,15 @@
 }
 .join {
   width: 35rem;
-  .join__text {
-    margin-bottom: 0.6rem;
-    h6 {
-      color: var(--color-grey);
-      @include media(">=tablet-landscape") {
-        color: white;
-      }
-    }
-  }
   @include media(">=tablet-landscape") {
     margin: 3rem 0;
+  }
+}
+.join__text {
+  margin-bottom: 0.6rem;
+  color: var(--color-grey);
+  @include media(">=tablet-landscape") {
+    color: white;
   }
 }
 .join__contact {
@@ -93,13 +91,11 @@
 .signature {
   margin: 18rem auto 0 auto;
   padding-bottom: 2.4rem;
-  h3 {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: white;
-    text-align: center;
-  }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
   @include media(">=tablet-landscape") {
     margin-top: 15.4rem;
     padding-bottom: 2rem;

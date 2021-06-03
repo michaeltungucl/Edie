@@ -1,5 +1,8 @@
+.designs {
+  margin: auto;
+}
 .designs__grid {
-  @include grid4_mobile;
+  width: 100%;
   position: relative;
   img {
     border-radius: 1.2rem;
@@ -9,6 +12,7 @@
   }
 }
 .designs__title {
+  @include headline2;
   margin: 8rem 0 6rem 0;
   max-width: 40rem;
 }

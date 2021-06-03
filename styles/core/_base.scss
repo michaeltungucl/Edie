@@ -41,24 +41,24 @@ p {
 body {
   font-size: 1.6rem;
 }
-h1 {
-  @include headline1;
-}
-h2 {
-  @include headline2;
-}
-h3 {
-  @include headline3;
-}
-h4 {
-  @include headline4;
-}
-h5 {
-  @include headline5;
-}
-h6 {
-  @include headline6;
-}
+// h1 {
+//   @include headline1;
+// }
+// h2 {
+//   @include headline2;
+// }
+// h3 {
+//   @include headline3;
+// }
+// h4 {
+//   @include headline4;
+// }
+// h5 {
+//   @include headline5;
+// }
+// h6 {
+//   @include headline6;
+// }
 p {
   font-size: 1.2rem;
   font-weight: 400;
